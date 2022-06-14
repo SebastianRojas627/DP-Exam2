@@ -36,7 +36,7 @@ public class PaginaWeb implements ISubject {
             }
         } else {
             for (IObserver obs : observers) {
-                if(!obs.isSoloVideo())
+                if(obs.isSoloVideos())
                 obs.update("INFO> Evento " + msg);
             }
         }

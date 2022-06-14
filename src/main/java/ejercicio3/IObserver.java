@@ -1,8 +1,17 @@
 package ejercicio3;
 
-public interface IObserver {
+public abstract class IObserver {
 
-    void update(String msg);
+    public IObserver(boolean soloVideos) {
 
-    boolean isSoloVideo();
+        this.soloVideos = soloVideos;
+    }
+
+    boolean soloVideos;
+
+    public abstract void update(String msg);
+
+    public boolean isSoloVideos() {
+        return soloVideos;
+    }
 }

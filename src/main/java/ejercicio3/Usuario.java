@@ -1,14 +1,12 @@
 package ejercicio3;
 
-public class Usuario implements IObserver{
+public class Usuario extends IObserver{
 
     private String nombre;
-    public boolean soloVideos;
 
     public Usuario(String nombre, boolean soloVideos) {
-
+        super(soloVideos);
         this.nombre = nombre;
-        this.soloVideos = soloVideos;
     }
 
     public String getNombre() {
@@ -30,8 +28,4 @@ public class Usuario implements IObserver{
         System.out.println("MSG: " + msg);
     }
 
-    @Override
-    public boolean isSoloVideo() {
-        return isSoloVideo();
-    }
 }

@@ -13,7 +13,6 @@ public class Client {
         paginaWeb.attach(new Usuario("Manuel", true));
 
         paginaWeb.subirImagen();
-        paginaWeb.subirVideo();
 
     }
 }
