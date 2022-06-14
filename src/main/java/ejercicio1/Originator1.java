@@ -6,8 +6,13 @@ public class Originator1 {
 
     public void setMemento(Archivo state) {
 
-        System.out.println("Originator> set state" + state.getState());
-        this.state = state;
+        if(state.getTexto().length() > 4) {
+            System.out.println("Originator> set state" + state.getState());
+            this.state = state;
+        } else {
+
+            System.out.println("No se tiene el minimo de palabras requeridas para realizar un versionamiento");
+        }
     }
 
     public Memento1 createMemento() {

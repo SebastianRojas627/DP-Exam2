@@ -14,7 +14,7 @@ public class Caretaker1 {
         version++;
     }
 
-    public Memento1 getMemento(int position) {
+    public Memento1 getMemento(String position) {
         return states.get(position);
     }
 

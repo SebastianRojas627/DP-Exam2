@@ -1,6 +1,7 @@
 package behavioral.mediator.structure;
 
 public abstract class Colleague {
+
     protected Mediator mediator;
 
     public Colleague(Mediator mediator) {
